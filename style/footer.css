@@ -1,0 +1,75 @@
+.glass-footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(100% - 100px);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    justify-content: flex-start;
+}
+
+.social-links {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-right: auto; 
+}
+
+.github-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #f1a15f; 
+}
+  
+.github-logo {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+  
+.github-link:hover .github-logo {
+    transform: scale(1.1);
+}
+
+.instagram-logo {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.instagram-link:hover .instagram-logo {
+    transform: scale(1.1);
+}
+
+.instagram-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #f1a15f;
+}

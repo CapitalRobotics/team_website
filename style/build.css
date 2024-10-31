@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+    color: #ecf0f1;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+.build-hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 60, 150, 0.8), black); 
+    color: #ffffff;
+    padding-top: 5rem; 
+    position: relative;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #f1a15f; 
+  }
+  
+  .hero-content p {
+    font-size: 24px;
+    color: #d1d1d1; 
+  }
+
+
+.build-components {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 66.6%;
+    max-width: 800px;
+  }
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    transition: all 0.4s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+  .glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .glass-card h2 {
+    font-size: 1.8em;
+    color: #f1a15f;
+    margin-bottom: 10px;
+  }
+  
+  .glass-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #d1d1d1; 
+  }
+
+.bento-box-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bento-container {
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+  }
+  
+  .bento-box {
+    padding: 20px 0;
+  }
+  
+  .bento-box h3 {
+    font-size: 1.5em;
+    color: #f1a15f;
+    margin-bottom: 8px;
+  }
+  
+  .bento-box p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #d1d1d1;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); 
+    margin: 10px 0;
+  }
+
+.meet-the-team-section {
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.meet-the-team-section h2 {
+    font-size: 2.5em;
+    color: #f1a15f;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-wrap: wrap;     
+    gap: 20px;
+    max-width: 1200px;   
+    margin: 0 auto;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.team-card h3 {
+    font-size: 1.8em;
+    color: #f1a15f;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-bottom: 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.build-hero,
+.glass-card,
+.bento-box,
+.team-card {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.glass-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.glass-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.team-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.team-card:nth-child(3) {
+    animation-delay: 0.4s;
+}

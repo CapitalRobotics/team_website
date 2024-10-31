@@ -1,0 +1,121 @@
+/* Full-width Navbar */
+.solid-navbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .solid-navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .solid-navbar ul li {
+    position: relative;
+    margin: 0 15px;
+  }
+  
+  .solid-navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+  }
+  
+.solid-navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.solid-navbar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.solid-navbar ul li a:hover {
+    color: #ffffff;
+}
+
+.solid-navbar ul li a:hover::after {
+    width: 70%;
+    opacity: 0.8;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 1001;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
